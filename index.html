@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+    <title>Stamp</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class='logo'>
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <ul class='nav-menu' id="dropdownClick">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Integration</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+
+        </nav>
+        <!-- Change nav-menu - nav-menu responsive -->
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === 'nav-menu') {
+                    x.className += " responsive"
+                } else {
+                    x.className = "nav-menu"
+                }
+            }
+        </script>
+        <!-- End of dropdown click -->
+
+        <div class="header-main-text">
+            <div class="pageText">
+                <h1 class='header-title-1'>Simple Way to Organize Your Inspirations</h1>
+                <h3 class='header-title-2'>I think what motivates people is not great hate, but great love for other people</h2>
+            </div>
+            <div class="sign-up">
+                <div class="form-fill">
+                    <div class="sign-up-header">
+                        <h1>Sign up for free</h1>
+                    </div>
+                    <div class="form-full">
+                        <form>
+                            <input type="text" name="field1" placeholder="Name" />
+                            <input type="email" name="field2" placeholder="E-mail" />
+                            <input type="password" name="field3" placeholder="Password" />
+                            <input type="submit" value="Sign up" />
+                        </form>
+                    </div>
+                    <div class="lower-text">
+                        <h2>By clicking "Sign Up" I agree to our</h2>
+                        <h3>Terms of Service.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../images/Page.png');
+    height: fit-content;
+    background-size: cover;
+}
+
+img {
+    width: 5.0rem;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+
+}
+
+.nav-menu {
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-menu li a:hover {
+    text-decoration: none;
+    color: rgb(8, 169, 243);
+    -webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+.pageText {
+    height: 300px;
+    width: 300px;
+}
+
+.header-title-1 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+}
+
+.header-title-2 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.header-main-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 180px 100px;
+}
+
+.lower-text h2 {
+    color: rgb(206, 204, 204);
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+.lower-text h3 {
+    color: rgb(233, 230, 230);
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.sign-up {
+    text-align: center;
+}
+
+.sign-up-header {
+    color: rgb(233, 230, 230);
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.4rem;
+    padding-bottom: 20px;
+}
+
+/******* Input Form Starts Here *********/
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.form-full {
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 100%;
+	margin: 10px auto;
+    background:rgba(255, 254, 254, 0.2);
+    border-radius: 7px;
+}
+
+.form-full h1{
+	padding: 20px 0;
+	font-size: 100%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+.form-full input[type="text"],
+.form-full input[type="password"],
+.form-full input[type="email"]
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: none;
+	margin-bottom: 0%;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	padding: 5%;
+	color: #fff;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-full input[type="text"] {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.form-full input[type="text"]:focus,
+.form-full input[type="email"]:focus,
+.form-full input[type="password"]:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 5%;
+	border: 1px solid #43D1AF;
+}
+
+.form-full input[type="submit"],
+.form-full input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #2C99ED;
+	border-bottom: 2px solid #2C99ED;
+	border-top-style: none;
+	border-right-style: none;
+    border-left-style: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;	
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-full input[type="submit"]:hover,
+.form-full input[type="button"]:hover{
+    background: #2EBC99;
+    -webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+}
+
+/* Input Form Ends Here */
+
+ul.nav-menu li.dropdownIcon {
+    display: none;
+}
+
+/* ############ Mobile ############ */
+
+@media screen and (max-width: 600px) {
+    .nav-menu li:not(:nth-child(0)) {
+        display: none;
+    }
+    ul.nav-menu li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.nav-menu.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.nav-menu.responsive li.dropdownIcon :hover{
+        
+    }
+
+    ul.nav-menu.responsive {
+        position: relative;
+        display: block;
+  
+    }
+
+    ul.nav-menu.responsive li {
+        display: block;
+        float: none;
+        padding-top: 10px;
+        background-color: rgba(255, 255, 255, 0.4);
+
+        
+    }
+
+    ul.nav-meu.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    .header-main-text {
+        display: block;
+        grid-template-columns: 1fr;
+        padding-top: 15px;
+        padding-left: 14px;
+        padding-right: 14px;
+        text-align: center
+    }
+
+    .pageText {
+        justify-content: center;
+        margin-left: 18%;
+    }
+
+    header {
+        background-size: cover;
+        height: fit-content;
+    }
+
+}
