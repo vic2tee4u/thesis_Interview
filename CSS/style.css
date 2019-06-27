@@ -9,6 +9,8 @@ header {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../images/Page.png');
     height: fit-content;
     background-size: cover;
+    height: 100vh;
+    
 }
 
 img {
@@ -247,7 +249,7 @@ ul.nav-menu li.dropdownIcon {
 
     header {
         background-size: cover;
-        height: fit-content;
+        height: 100vh;
     }
 
 }
